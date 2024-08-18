@@ -7,6 +7,15 @@ $(document).ready(function(){
 
         $('.site-nav-menu').toggleClass('mobile-menu')
     })
+
+    $('#services').mouseover(function(){
+
+        $('#second-menu').addClass('sub')
+    })
+    $('#second-menu').mouseleave(function(){
+
+        $('#second-menu').removeClass('sub')
+    })
 })
 
 

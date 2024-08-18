@@ -27,6 +27,7 @@ body{
     float: left;
     padding: 17px 0;
 }
+
 .site-logo a{
    text-decoration: none;
    color: #fff;
@@ -77,7 +78,7 @@ body{
     color: #ff4a44;
 }
 
-.primary-menu li a::after{
+.primary-menu li  a::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -100,8 +101,27 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
 }
 
+.primary-menu li:nth-child(3){
+    position: relative;
+}
+.primary-menu li:nth-child(3) ul{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #142440;
+    left: -50px;
+    top: 50px;
+    min-width: 200px;
+}
+
+.primary-menu li:nth-child(3) ul.sub{
+    display: flex;
+}
 
 /*******************************RESPONSIVE************************/
 @media screen and (max-width: 900px) {
@@ -137,6 +157,7 @@ body{
     .primary-menu li a::after{
         display: none;
     }
+
 }
 
 
